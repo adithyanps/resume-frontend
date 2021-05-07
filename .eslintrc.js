@@ -28,14 +28,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [
-          ['components', './components'],
-          ['features', './features'],
-          ['yoredux', './yoredux'],
-          ['utils', './utils'],
-          ['i18n', './i18n'],
-          ['assets', './assets'],
-        ],
+        map: [],
         extensions: ['.js', '.jsx', '.json']
       }
     },
