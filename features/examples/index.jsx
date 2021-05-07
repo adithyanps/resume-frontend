@@ -7,7 +7,9 @@ import CoreComponents from './CoreComponents';
 import Types from './Types';
 
 
-  const ThemeDemo = () =>(
+  const ThemeDemo = () =>{
+
+    return(
       <Container>
       <Box my={10}>
       <CoreComponents />
@@ -17,5 +19,6 @@ import Types from './Types';
     </Box>
       </Container>
     )
+  }
 
 export default ThemeDemo;
