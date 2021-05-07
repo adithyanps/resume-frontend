@@ -22,8 +22,12 @@ module.exports = {
   },
   plugins: [
     'react',
+    'no-loops'
   ],
   rules: {
+    'no-loops/no-loops': 2, // 2 means throw an ERROR fix: suppress errors for missing 'import React' in files for nextjs
+    "no-console": 1,
+    "prettier/prettier": 2
   },
   settings: {
     'import/resolver': {
