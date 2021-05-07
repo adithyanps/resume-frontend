@@ -8,7 +8,8 @@
     "export": "next export",
     "lint": "eslint --ext js,jsx .",
     "lintfix": "eslint --ext js,jsx . --fix",
-    "analyze": "cross-env ANALYZE=true next build"
+    "analyze": "cross-env ANALYZE=true next build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
