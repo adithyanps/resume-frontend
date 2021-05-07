@@ -8,7 +8,10 @@ import Types from './Types';
 
 
   const ThemeDemo = () =>{
-
+    const test = [];
+useEffect(() => {
+  console.log(test);
+}, []); // <-- should Warn with has a missing dependency as 'test'
     return(
       <Container>
       <Box my={10}>
