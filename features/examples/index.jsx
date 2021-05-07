@@ -7,12 +7,7 @@ import CoreComponents from './CoreComponents';
 import Types from './Types';
 
 
-  const ThemeDemo = () =>{
-    const test = [];
-useEffect(() => {
-  console.log(test);
-}, []); // <-- should Warn with has a missing dependency as 'test'
-    return(
+  const ThemeDemo = () =>(
       <Container>
       <Box my={10}>
       <CoreComponents />
@@ -22,6 +17,5 @@ useEffect(() => {
     </Box>
       </Container>
     )
-  }
 
 export default ThemeDemo;
