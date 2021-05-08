@@ -33,12 +33,12 @@ import React, {
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button enableArrow>
+          <Button>
             Text
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button enableArrow href="/hello">
+          <Button href="/hello">
             Text
           </Button>
         </Grid>
@@ -58,7 +58,7 @@ import React, {
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button disabled variant="outlined" enableArrow>
+          <Button disabled variant="outlined" >
             Text
           </Button>
         </Grid>
@@ -68,27 +68,28 @@ import React, {
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button enableArrow variant="outlined" size="small">
+          <Button  variant="outlined" size="small">
             Text
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button enableArrow variant="outlined" size="xsmall">
+          <Button  variant="outlined" size="xsmall">
             Text
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button enableProgress enableArrow variant="outlined" size="xsmall">
+          <Button enableProgress  variant="outlined" size="xsmall">
             Text
           </Button>
         </Grid>
         <Grid item md={3}>
+
           <Button enableProgress size="small">
             Text
           </Button>
         </Grid>
         <Grid item md={3}>
-          <Button enableProgress enableArrow variant="outlined">
+          <Button enableProgress  variant="outlined">
             Text
           </Button>
         </Grid>

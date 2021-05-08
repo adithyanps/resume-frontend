@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
     Container,
     Box,
@@ -6,19 +6,15 @@ import {
 import CoreComponents from './CoreComponents';
 import Types from './Types';
 
-
-  const ThemeDemo = () =>{
-
-    return(
+  const ThemeDemo = () =>(
       <Container>
       <Box my={10}>
       <CoreComponents />
       <Box mb={5} />
       <Types />
       <Box mb={5} />
-    </Box>
+      </Box>
       </Container>
     )
-  }
 
 export default ThemeDemo;
