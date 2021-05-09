@@ -1,10 +1,18 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import Typography from '../../components/Typography';
+import Link from '../../components/Link';
 
 const Types = () => (
   <Grid container>
     <Grid item xs={12}>
+    <Grid item md={3}>
+    <Typography variant="body2">
+      <Link href="https://www.kappitaan.com/">
+        kappitaan
+      </Link>
+    </Typography>
+  </Grid>
       <Typography variant="h1" gutterBottom>
         h1. Heading
       </Typography>
