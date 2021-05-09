@@ -6,6 +6,43 @@ import {
 const interFontFamily = '"Inter", sans-serif';
 const frankRuhlFontFamily = '"Frank Ruhl Libr", serif';
 
+
+const extraColors = {
+  base: {
+    light: '#e2e2e2',
+    main: '#ffffff', // white
+  },
+  statusDefault: {
+    light: '#eff0f1',
+    main: '#9fa6b2',
+    dark: '#7e8796', // Not provided by designer
+  },
+  accent1: {
+    light: '#feecc3',
+    main: '#fec547', // yellow
+    dark: '#b28624', // Not provided by designer
+  },
+  accent2: {
+    light: '#f6e5fa', // purple
+    main: '#dea8ee',
+    dark: '#af72c1', // Not provided by designer
+  },
+  accent3: {
+    light: '#e6f9f3',
+    main: '#82e1c1',
+    dark: '#56b293', // Not provided by designer
+  },
+  accent4: {
+    light: '#ffe8d3',
+    main: '#ffb16b',
+    dark: '#c77d3b', // Not provided by designer
+  },
+  accent5: {
+    light: '#787878' // gray
+  }
+};
+
+
 const palette ={
     background: {
         default: '#f5f7fb',
@@ -93,10 +130,9 @@ const theme = createMuiTheme({
           color: palette.text.primary,
         },
         h6: {
-          fontFamily: interFontFamily,
-          fontSize: 18,
-          fontWeight: 700,
-          color: palette.text.primary,
+          fontSize: 13.5,
+          fontWeight: 400,
+          color: extraColors.accent5.light,
         },
         subtitle1: {
           fontFamily: interFontFamily,
@@ -245,7 +281,7 @@ const theme = createMuiTheme({
         },
       },
   });
-  
+
   const rTheme = responsiveFontSizes(theme, {
     variants: [
       'h1',
@@ -257,12 +293,16 @@ const theme = createMuiTheme({
       'button',
     ],
   });
-  
+
   // Make shadows light
   rTheme.shadows = rTheme.shadows.map((s) => {
     const newS = s.replace(/rgba\(.*?\)/g, 'rgba(0,0,0,0.08)');
-  
+
     return newS;
   });
-  
+
   export default rTheme;
+
+  export {
+    extraColors,
+  };
