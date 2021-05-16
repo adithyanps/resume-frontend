@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import { ThemeProvider} from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import NextNprogress from 'nextjs-progressbar';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -14,9 +14,9 @@ const App = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
     <NextNprogress
-      color = {theme.palette.primary.main}
-      />
-      <Component {...pageProps} />
+      color={theme.palette.primary.main}
+    />
+    <Component {...pageProps} />
   </ThemeProvider>
 );
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../core/Layout';
 
-const PortfolioPage = () => (
+const ContactPage = () => (
   <Layout title="Portfolio">
 
-    portfolio section
+    ContactPage section
 
   </Layout>
 
 );
 
-export default PortfolioPage;
+export default ContactPage;

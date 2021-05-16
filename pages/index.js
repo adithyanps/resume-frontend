@@ -1,3 +1,3 @@
-import PortfolioPage from '../features/PortfolioPage';
+import ResumePage from '../features/ResumePage';
 
-export default PortfolioPage;
+export default ResumePage;
