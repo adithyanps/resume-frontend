@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../core/Layout';
 
-const ResumePage = () => (
+const BlogPage = () => (
   <Layout>
-    ResumePage
+    BlogPage Section
   </Layout>
 );
 
-export default ResumePage;
+export default BlogPage;
